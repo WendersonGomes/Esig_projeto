@@ -114,6 +114,15 @@ namespace Esig_projeto
         protected global::System.Web.UI.WebControls.DropDownList ddlCargo;
 
         /// <summary>
+        /// Controle erro_mensagem.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label erro_mensagem;
+
+        /// <summary>
         /// Controle btnSalvar.
         /// </summary>
         /// <remarks>

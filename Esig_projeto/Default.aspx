@@ -42,9 +42,11 @@
                         AutoPostBack="true" OnSelectedIndexChanged="SalarioBaseAlterado" />
                 </div>
             </div>
-
+            <div class="text-center">
+                <asp:Label ID="erro_mensagem" runat="server" Text="" />
+            </div>
             <div class="mt-4 text-center">
-                <asp:Button ID="btnSalvar" runat="server" Text="Salvar" CssClass="btn btn-success me-2" OnClick="btnSalvar_Click" />
+                <asp:Button ID="btnSalvar" runat="server" Text="Salvar" CssClass="btn btn-success me-2" OnClick="BtnSalvar_Click" />
                 <asp:HyperLink ID="hlVoltar" runat="server" NavigateUrl="Listar.aspx" CssClass="btn btn-secondary">Ver lista</asp:HyperLink>
             </div>
         </div>

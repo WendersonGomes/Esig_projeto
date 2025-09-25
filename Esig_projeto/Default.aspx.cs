@@ -70,8 +70,17 @@ namespace Esig_projeto
             }
         }
 
-        protected void btnSalvar_Click(object sender, EventArgs e)
+        protected void BtnSalvar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtNome.Text) ||
+                string.IsNullOrWhiteSpace(txtEmail.Text) ||
+                ddlCargo.SelectedValue == "0")
+            {
+                erro_mensagem.Text = "Preencha todos os campos obrigatórios.";
+                erro_mensagem.CssClass = "text-danger";
+                return;
+            }
+
             int id = Request.QueryString["id"] != null ? int.Parse(Request.QueryString["id"]) : 0;
 
             var pessoa = new Pessoa
