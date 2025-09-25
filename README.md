@@ -9,7 +9,6 @@ O sistema permite **cadastrar, editar, listar e excluir pessoas**, além de calc
 ## Funcionalidades Implementadas
 
 - Cadastro e edição de pessoas com vínculo a cargos.
-- Definição automática de salário com base no cargo selecionado (campo somente leitura).
 - Listagem de salários em ordem crescente por ID.
 - Cálculo de bônus salarial de acordo com a idade:
   - Idade > 50 anos → bônus de 20% no salário.
@@ -72,4 +71,6 @@ O sistema permite **cadastrar, editar, listar e excluir pessoas**, além de calc
 ## Observações
 
 - O campo de salário **não pode ser editado manualmente**; ele é definido automaticamente de acordo com o cargo escolhido.
-- Por algum motivo a importação da planilha no banco não funcionou 100%, das 3 mil pessoas apenas 115 foram importadas corretamente
+- Por algum motivo a importação da planilha referente as ´pessoas´ no banco não funcionou 100%, das 3 mil pessoas apenas 115 foram importadas corretamente.
+- O formato da data foi alterado para yyyy-mm-dd.
+- Não adicionei a validação de todos os inputs e conversões necessarias ao criar uma pessoa ou editar.
